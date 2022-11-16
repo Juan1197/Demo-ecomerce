@@ -1,0 +1,29 @@
+# For version 1.0
+1. Add product description with Add product detail view
+2. Add quantity available; and remove cart badge create custom one
+3. Add search functionality( if you are at home just search if not; go home and search- maybe get url params aproach)
+4. Build cart using session/redux and store it in database 
+5. Create populate script and init db
+6. Build all the api endpoints
+7. Remove materialui checkbox stuff ? I can do it manually...
+8. Comment slider and use two inputs separated with - for price filter...
+9. Add js validators for login and register
+10. Disable checkout button if cart is empty
+11. Create a selenium or jest test (load product list / prduct detail for one product check all the attributes for the product in both views; add the product to cart increase quantity check summary; decrease and check)
+12. Add checkout template with this message: We are working on it; in the next version you will be able to complete your order via stripe. You can call our sales team to process this order manually
+
+
+
+# For version 2.0
+1. Add products categories
+2. Integrate with stripe
+3. Add offers with badges
+4. Add more relevant order by
+5. Improve search item navbar
+6. Add an eye in password input to check the password value
+
+
+# For version 3.0
+1. Add reviews system
+2. Add advertisement
+3. Promotional codes

@@ -49,7 +49,8 @@ const Register = () => {
 				<Form>
 					<Input placeholder="name" />
 					<Input placeholder="last name" />
-					<Input placeholder="username" />
+					<Input placeholder="adress" />
+					<Input placeholder="phone number" />
 					<Input placeholder="email" />
 					<Input placeholder="password" />
 					<Input placeholder="confirm password" />

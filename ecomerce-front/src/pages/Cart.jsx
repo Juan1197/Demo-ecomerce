@@ -190,9 +190,9 @@ const Cart = () => {
 										</Details>
 									</ProductDetail>
 									<ProductAmountContainer>
-										<Add style={{ cursor: "pointer" }} onClick={increaseQuantity}/>
-										<ProductAmount>{item.quantity}</ProductAmount>
 										<Remove style={{ cursor: "pointer" }} onClick={decreaseQuantity}/>
+										<ProductAmount>{item.quantity}</ProductAmount>
+										<Add style={{ cursor: "pointer" }} onClick={increaseQuantity}/>
 									</ProductAmountContainer>
 								</Product>
 								{i + 1 !== row.length && <Hr />}
