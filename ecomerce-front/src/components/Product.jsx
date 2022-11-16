@@ -1,3 +1,4 @@
+import { ShoppingCartOutlined } from "@material-ui/icons";
 import styled from "styled-components";
 
 const HoverEffect = styled.div`
@@ -14,6 +15,22 @@ const HoverEffect = styled.div`
 	justify-content: center;
 	transition: all 0.5s ease;
 	cursor: pointer;
+`;
+
+const Icon = styled.div`
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	transition: all 0.5s ease;
+	&:hover {
+		background-color: #e9f5f5;
+		transform: scale(1.1);
+	}
 `;
 
 const Container = styled.div`
@@ -47,10 +64,10 @@ const Description = styled.div`
 	display: block;
 	font-size: 1.0625rem;
 `;
-	
+
 const Name = styled.span`
 `;
-	
+
 const Price = styled.span`
 	display: flex;
 	margin-top: 10px;
@@ -67,14 +84,18 @@ const Price = styled.span`
 const Product = ({ item }) => {
 	return (
 		<Container>
-			<HoverEffect />
+			<HoverEffect>
+				<Icon>
+					<ShoppingCartOutlined />
+				</Icon>
+			</HoverEffect>
 			<ProductImage src={item.img} />
 			<Description>
 				<Name>
 					{item.name}
 				</Name>
 				<Price>
-					{item.price}$
+					${item.price}
 				</Price>
 			</Description>
 		</Container>

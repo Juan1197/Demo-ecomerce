@@ -1,5 +1,6 @@
 import { Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter, } from "@material-ui/icons";
 import styled from "styled-components";
+
 import Logo from "./Logo"
 import payments from "../assets/payment.png"
 

@@ -1,7 +1,8 @@
   export const popularProducts = [
     {
       id:1,
-      price: 1234.5,
+      price: 2.5,
+      quantity: 2,
       name: "12qweqw 45",
       brand: "bbbbb",
       img:"https://media.gamestop.com/i/gamestop/11098612/Funko-POP-Animation-Dragon-Ball-Super-Gohan-Metallic--3.75-in-Vinyl-Figure-GameStop-Exclusive?$pdp2x",
@@ -9,7 +10,8 @@
     },
     {
       id:3,
-      price: 1234.5,
+      price: 30.5,
+      quantity: 1,
       name: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa",
       brand: "aaaaasss",
       img:"https://media.gamestop.com/i/gamestop/11143305/Horse-Mane-Word-Art--Small-Tote-Bag?$pdp2x",
@@ -17,7 +19,8 @@
     },
     {
       id:5,
-      price: 1234.5,
+      price: 3059.30,
+      quantity: 0,
       name: "Batticao",
       brand: "aaaa",
       img:"https://media.gamestop.com/i/gamestop/11177278/Melissa-and-Doug-Chomp-and-Clack-Alligator-Push-Toy?$pdp2x",
@@ -25,7 +28,8 @@
     },
     {
       id:6,
-      price: 1234.5,
+      quantity: 5,
+      price: 700.5,
       name: "rtickinillo",
       brand: "aaaa",
       img:"https://media.gamestop.com/i/gamestop/11136343/Highland-Mint-MLB-Philadelphia-Phillies-Bryce-Harper-Impact-Jersey-Framed-Photo?$pdp2x",
@@ -33,7 +37,8 @@
     },
     {
       id:8,
-      price: 1234.5,
+      quantity: 0,
+      price: 125,
       name: "Salam,i",
       brand: "aaaa",
       img:"https://media.gamestop.com/i/gamestop/11141825/Marvel-Black-Panther-Tie-Dye-Mask-Mens-T-Shirt?$pdp2x",
