@@ -50,7 +50,7 @@ const Login = () => {
 					<Button primary text="Login" />
 				</Form>
 				<Separator text="Are you a new client?"/>
-				<Link to="/signup">
+				<Link to="/signup" style={{ textDecoration: "none" }}>
 					<Button text="Create a new account" />
 				</Link>
 			</Wrapper>

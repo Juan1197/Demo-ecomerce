@@ -232,7 +232,7 @@ const Home = () => {
 								onChange={rangeSelectorChange}
 								valueLabelDisplay="on"
 								ValueLabelComponent={ValueLabelComponent}
-								style={{ minWidth: "200px", margin: "0px 15px" }}
+								style={{ minWidth: "200px", margin: "0px 15px", maxWidth: "90%" }}
 							/>
 						</Filter>
 					</FilterContainer>}

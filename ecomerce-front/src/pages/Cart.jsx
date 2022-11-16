@@ -41,6 +41,7 @@ const Info = styled.div`
 const Product = styled.div`
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	@media only screen and (max-width: 500px) {
 		flex-direction: column;
 	}
@@ -54,6 +55,7 @@ const ProductDetail = styled.div`
 const Image = styled.img`
 	padding: 5px;
   	width: 200px;
+	height: 200px;
 `;
 
 const Details = styled.div`
@@ -63,15 +65,13 @@ const Details = styled.div`
 `;
 
 const ProductLabel = styled.span`
-	margin-bottom: 15px
+	margin-bottom: 15px;
 `;
 
 const ProductPrice = styled.div`
 	flex: 1;
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
-	// justify-content: center;
 	font-size: 30px;
 	font-weight: 200;
 	@media only screen and (max-width: 500px) {
@@ -84,6 +84,10 @@ const ProductAmountContainer = styled.div`
 	align-items: center;
 	padding: 5px;
 	border: 0.5px solid lightgray;
+	margin: 10px;
+	height: fit-content;
+	width: fit-content;
+	justify-content: center;
 `;
 
 const ProductAmount = styled.div`
@@ -150,7 +154,15 @@ const Cart = () => {
 
 	const shippingCost = 5;
 	const [products, setProducts] = useState(popularProducts);
-	const total = products.reduce((total, item) => total = total + item.price, 0);
+	const total = products.reduce((total, item) => total = total + (item.price * item.quantity), 0);
+
+	const increaseQuantity = (event) => {
+		console.log(event.target)
+	}
+	
+	const decreaseQuantity = (event) => {
+		console.log(event.target)
+	}
 
 	return (
 		<Container>
@@ -160,8 +172,8 @@ const Cart = () => {
 				<CartDetail>
 					<Info>
 						{products.map((item, i, row) => (
-							<>
-								<Product item={item} key={item.id}>
+							<React.Fragment key={item.id}>
+								<Product item={item}>
 									<ProductDetail>
 										<Image src={item.img} />
 										<Details>
@@ -178,13 +190,13 @@ const Cart = () => {
 										</Details>
 									</ProductDetail>
 									<ProductAmountContainer>
-										<Add />
+										<Add style={{ cursor: "pointer" }} onClick={increaseQuantity}/>
 										<ProductAmount>{item.quantity}</ProductAmount>
-										<Remove />
+										<Remove style={{ cursor: "pointer" }} onClick={decreaseQuantity}/>
 									</ProductAmountContainer>
 								</Product>
 								{i + 1 !== row.length && <Hr />}
-							</>
+							</React.Fragment>
 						))}
 					</Info>
 					<Summary>

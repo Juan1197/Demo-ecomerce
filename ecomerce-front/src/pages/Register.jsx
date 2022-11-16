@@ -60,7 +60,7 @@ const Register = () => {
 					<Button primary text="Sign up" />
 				</Form>
 				<Separator text="Have an account?"/>
-				<Link to="/login">
+				<Link to="/login" style={{ textDecoration: "none" }}>
 					<Button text="Login" />
 				</Link>
 			</Wrapper>

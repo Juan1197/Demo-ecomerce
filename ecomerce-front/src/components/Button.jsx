@@ -9,6 +9,7 @@ const ButtonStyled = styled.button`
 	cursor: pointer;
 	margin: 10px 0;
 	display: flex;
+	justify-content: center;
 
 	&:hover {
 		color: ${props => props.primary ? "#F9A31C" : "white"};
